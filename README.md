@@ -1,4 +1,3 @@
-<p style="color:#b20303 font-family:'Pacifico'">This is a paragraph.</p>
 ![Family Feud Game Logo](https://github.com/lynnerang/family-feud/blob/master/src/images/family-feud-logo.png)
 
 ## Table of contents
