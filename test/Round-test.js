@@ -41,12 +41,12 @@ describe('Round', () => {
   it('should have answers corresponding to the survey question', () => {
     let round = new Round(survey, surveyAnswers, game);
 
-  expect(round.surveyAnswers).to.deep.equal([
-      { answer: 'Bowling Ball', respondents: 5 },
-      { answer: 'Donuts', respondents: 24 },
-      { answer: 'Beer', respondents: 67 }
-    ]);
-  });
+    expect(round.surveyAnswers).to.deep.equal([
+        { answer: 'Bowling Ball', respondents: 5 },
+        { answer: 'Donuts', respondents: 24 },
+        { answer: 'Beer', respondents: 67 }
+      ]);
+    });
 
   it('should have a property referencing the game it is in', () => {
     let round = new Round(survey, surveyAnswers, game);
