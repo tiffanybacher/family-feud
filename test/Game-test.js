@@ -14,7 +14,8 @@ chai.spy.on(domUpdates, [
   'displayRoundData', 
   'displayPlayer1', 
   'displayPlayer2',
-  'clearAnswerBoard'
+  'clearAnswerBoard',
+  'disableBackgroundTabbing'
 ], () => true);  
 
 describe('Game', () => {

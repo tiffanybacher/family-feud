@@ -26,8 +26,6 @@ chai.spy.on(domUpdates, [
   'endOfRoundMsg',
   'removeTimers',
   'blurGuessInput',
-  'displayTimer',
-  'displayFastroundDialog',
   'showWinnerScreen',
   'showAlreadyTriedMsg',
   'showMustEnterGuessMsg'
