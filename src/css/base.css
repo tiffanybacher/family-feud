@@ -1,95 +1,96 @@
 body {
-  padding: 0;
-  margin: 0 auto;
-  font-family: 'Roboto';
   background: #b7dbe1;
   color: #333333;
+  font-family: 'Roboto';
   font-size: 1.2em;
+  margin: 0 auto;
   min-width: 768px;
+  padding: 0;
 }
 
-.timer-1,
-.timer-2 {
-  background: transparent;
-  font-weight: 900;
-  height: 150px;
-  width: 150px;
-  font-size: 75px;
-  color: #b20303;
-  border: 4px solid darkgray;
-  border-radius: 100%;
-  position: absolute;
-  margin: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+input {
+  padding: 0px 15px;
 }
 
-.timer-1 {
-  left: 60px;
+input, 
+button {
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 55px;
 }
 
-.timer-2 {
-  right: 60px;
+button {
+  background: #b20303;
+  border: none;
+  color: white;
+  font-size: 1em;
+  margin: 15px;
+  padding: 0px 20px;
 }
 
-.winner-screen,
-.tie-screen,
-.welcome-screen {
-  background: rgba(0, 0, 0, 0.75);
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  z-index: 2;
-}
-
-.fastround-ready-screen {
-  background: rgba(0, 0, 0, 0.75);
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  z-index: 2;
+button:hover {
+  background: darkgray;
+  color: #333333;
 }
 
 button:disabled {
   background: lightgray!important;
 }
 
-.msg {
-  display: none;
-  font-size: 1.3em;
-  margin: 15px auto 0;
-  color: #b20303;
-}
-
-.msg-area {
-  text-align: center;
+.welcome-screen,
+.fastround-ready-screen,
+.winner-screen,
+.tie-screen {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
 
 .name-form,
+.fastround-dialog,
 .winner-popup,
-.tie-screen {
+.tie-popup {
   background: #213b72;
+  border-radius: 5px;
   border: 5px solid white;
   color: white;
   display: flex;
   flex-direction: column;
   padding: 50px;
-  border-radius: 5px;
 }
 
+.fastround-dialog {
+  padding: 50px;
+  text-align: center;
+  width: 35%;
+}
 
 .winner-popup,
 .tie-popup {
-  text-align: center;
   height: 300px;
+  text-align: center;
   width: 500px;
+}
+
+.name-form h2 {
+  color: white;
+  font-family: 'Pacifico';
+  font-size: 6em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 20px 0 70px;
+  text-align: center;
+}
+
+.fastround-dialog h3 {
+ font-size: 3em;
+ font-weight: 900;
+ margin-top:0;
 }
 
 .winner-popup h3,
@@ -99,32 +100,29 @@ button:disabled {
   margin: 0 0 100px 0;
 }
 
-.fastround-dialog h3 {
- font-size: 3em;
- font-weight: 900;
- margin-top:0;
-}
-
 .tie-header,
 .winner-name {
   display: block;
   font-size: 2em;
 }
 
-.fastround-dialog {
-  background: #213b72;
-  border-radius: 5px;
-  border: 5px solid white;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  text-align: center;
-  width: 35%;
-}
-
 .name-form input {
   width: 100%;
+}
+
+.name-form button {
+  margin: 20px;
+}
+
+.name-input-field {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 20px;
+}
+
+.name-input-field label {
+  margin: 0 0 8px 0;
 }
 
 .play-again-btn,
@@ -142,27 +140,17 @@ button:disabled {
 
 .main {
   margin: 0 auto;
-  text-align: center;
   padding: 20px 0 0 0;
-}
-
-header h1 {
-  font-size: 4.5em;
-  letter-spacing: 3px;
-  font-weight: 900;
-  color: #b20303;
-  margin: 0 0 40px 0;
-  font-family: 'Pacifico';
-}
-
-.name-form h2 {
-  font-size: 6em;
-  letter-spacing: 3px;
-  font-weight: 900;
-  color: white;
-  margin: 20px 0 70px;
-  font-family: 'Pacifico';
   text-align: center;
+}
+
+.header h1 {
+  color: #b20303;
+  font-family: 'Pacifico';
+  font-size: 4.5em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 0 0 40px 0;
 }
 
 .round-title {
@@ -171,40 +159,24 @@ header h1 {
   text-transform: uppercase;
 }
 
-.player-fields {
-  display: flex;
-  flex-direction: column;
-  width: 600px;
-}
-
-.player-fields,
-.name-form button {
-  margin: 20px;
-}
-
 .survey {
   font-size: 1.2em;
-  max-width: 500px;
   margin: 10px auto 0;
-}
-
-.score-area {
-  display: flex;
-  justify-content: space-around;
+  max-width: 500px;
 }
 
 .player-area {
-  color: darkgray;
-  border: 5px solid darkgray;
+  background: white;
   border-radius: 5px;
+  border: 5px solid darkgray;
+  color: darkgray;
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  margin: 20px 30px;
-  justify-content: center;
-  background: white;
-  width: 175px;
   font-weight: 900;
+  justify-content: center;
+  margin: 20px 30px;
+  padding: 30px;
+  width: 175px;
 }
 
 .active-player-area {
@@ -218,6 +190,11 @@ header h1 {
   margin: 0;
 }
 
+.score-area {
+  display: flex;
+  justify-content: space-around;
+}
+
 .player-score {
   font-size: 4em;
   margin: auto;
@@ -225,12 +202,12 @@ header h1 {
 }
 
 .answer-area {
-  border: 4px solid #b20303;
+  background: #213b72;
   border-radius: 5px;
-  width: 500px;
+  border: 4px solid #b20303;
   height: 250px;
   margin: 20px 30px;
-  background: #213b72;
+  width: 500px;
 }
 
 .answer-area p {
@@ -238,21 +215,25 @@ header h1 {
 }
 
 .answer-card {
-  border: 3px solid white;
-  border-radius: 2px;
   background: #213b72;
+  border-radius: 2px;
+  border: 3px solid white;
   color: white;
   font-size: 1.2em;
-  text-transform: uppercase;
   font-weight: 700;
-  padding: 0px 20px;
-  margin: 3px;
   height: 29.3%;
+  margin: 3px;
+  padding: 0px 20px;
+  text-transform: uppercase;
 }
 
 .answer-data {
   display: flex;
   justify-content: space-between;
+}
+
+.guess-area {
+  position: relative;
 }
 
 .guess-input-bar {
@@ -261,11 +242,7 @@ header h1 {
   margin: 10px 0 0 0;
 }
 
-.guess-area {
-  position: relative;
-}
-
-.guess-area input {
+.guess-input {
   width: 410px;
 }
 
@@ -277,46 +254,49 @@ header h1 {
   color: #fff;
 }
 
-label {
-  margin-top: 5px;
+.msg {
+  color: #b20303;
+  display: none;
+  font-size: 1.3em;
+  margin: 15px auto 0;
 }
 
-input, 
-button {
-  box-sizing: border-box;
-  height: 55px;
-  border-radius: 4px;
-}
-
-button {
-  border: none;
-  font-size: 1em;
-  margin: 15px;
-  background: #b20303;
-  color: white;
-  padding: 0px 20px;
-}
-
-button:hover {
-  background: darkgray;
-  color: #333333;
-}
-
-input {
-  padding: 0px 15px;
-}
-
-label {
-  margin: 0 0 8px 0;
+.msg-area {
+  text-align: center;
 }
 
 #start-btn {
-  width: 100%;
   border-radius: 0;
-  position: absolute;
   bottom: 0;
-  right: 0;
   left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.timer-1,
+.timer-2 {
+  align-items: center;
+  background: transparent;
+  border-radius: 100%;
+  border: 4px solid darkgray;
+  color: #b20303;
+  display: flex;
+  font-size: 75px;
+  font-weight: 900;
+  height: 150px;
+  justify-content: center;
+  margin: 60px;
+  position: absolute;
+  width: 150px;
+}
+
+.timer-1 {
+  left: 60px;
+}
+
+.timer-2 {
+  right: 60px;
 }
 
 .hidden {

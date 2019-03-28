@@ -57,6 +57,8 @@ export default {
     $(".answer-data").addClass("hidden");
     $(".player-1-score").text("0");
     $(".player-2-score").text("0");
+    $(".player-1-side").removeClass("active-player-area");
+    $(".player-2-side").removeClass("active-player-area");
   },
 
   showNoMatchMsg() {
