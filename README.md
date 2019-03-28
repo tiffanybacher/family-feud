@@ -18,10 +18,10 @@ This is a two player game modeled after the TV show ‘Family Feud’.  Each gam
 ## Screenshots
 
 ![Player name entry](/screenshots/familyfeud1.png)
-![Start of game](/screenshots/familyfeud2.png)
-![Correct guess is entered](/screenshots/familyfeud3.png)
-![Fast round with timer](/screenshots/familyfeud4.png)
-![Winner display with play again option](/screenshots/familyfeud4.png)
+![Round 1 gameplay](/screenshots/familyfeud3.png)
+![Round 2 gameplay](/screenshots/familyfeud2.png)
+![Round 3- Fast Money round with timer](/screenshots/familyfeud4.png)
+![Winner display with play again option](/screenshots/familyfeud5.png)
 
 
 ## Getting Started
