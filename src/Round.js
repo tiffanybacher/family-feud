@@ -1,5 +1,4 @@
 import domUpdates from './domUpdates';
-import Game from './Game.js'
 
 class Round {
   constructor(survey, surveyAnswers, game) {
@@ -48,11 +47,12 @@ class Round {
 
   generateEndRoundMsg() {
     if (this.game.player1.score > this.game.player2.score) {
-      var roundWinner = this.game.player1.name;
+      let roundWinner = this.game.player1.name;
+      domUpdates.endOfRoundMsg(roundWinner, this.game);
     } else {
-      var roundWinner = this.game.player2.name;
+      let roundWinner = this.game.player2.name;
+      domUpdates.endOfRoundMsg(roundWinner, this.game);
     }
-    domUpdates.endOfRoundMsg(roundWinner, this.game);
   }
 }
 

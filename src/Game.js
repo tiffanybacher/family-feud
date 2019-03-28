@@ -158,10 +158,10 @@ class Game {
     if (this.player1.score === this.player2.score) {
       domUpdates.showTieScreen();
     } else if (this.player1.score > this.player2.score) {
-      var winnerName = this.player1.name;
+      let winnerName = this.player1.name;
       domUpdates.showWinnerScreen(winnerName);
     } else {
-      var winnerName = this.player2.name;
+      let winnerName = this.player2.name;
       domUpdates.showWinnerScreen(winnerName);
       domUpdates.disableBackgroundTabbing();
     }
