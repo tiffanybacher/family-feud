@@ -1,4 +1,4 @@
-![Family Feud Game Logo](https://github.com/lynnerang/family-feud/blob/master/src/images/family-feud-logo.png)
+![Family Feud Game Logo](/screenshots/family-feud-logo.png)
 
 ## Table of contents
 * [Intro](#Family-Feud-Game-App)
