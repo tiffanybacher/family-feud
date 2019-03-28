@@ -119,8 +119,11 @@ export default {
       if ($(".timer-1").is(":hidden")) {
         clearInterval(interval);
       } else if (seconds === 0 && game.currentRound === 3) {
-        $(".answer-data").removeClass("hidden");
         clearInterval(interval);
+        if ($(".answer-data").is(":hidden")) {
+          $(".answer-data:hidden").find("p").addClass("unguessed");
+          $(".answer-data").removeClass("hidden");
+        }
         $(".timer-area-1").addClass("hidden");
         setTimeout(() => {
           $(".fastround-ready-screen").removeClass("hidden");
@@ -154,7 +157,11 @@ export default {
         clearInterval(interval);
       } else if (seconds === 0 && game.currentRound === 3) {
         clearInterval(interval);
-        $(".answer-data").removeClass("hidden");
+        
+        if ($(".answer-data").is(":hidden")) {
+          $(".answer-data:hidden").find("p").addClass("unguessed");
+          $(".answer-data").removeClass("hidden");
+        }
         $(".timer-area-2").addClass("hidden");
         setTimeout(() => {
           $(".fastround-ready-screen").removeClass("hidden");
