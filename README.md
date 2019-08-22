@@ -1,5 +1,3 @@
-![Family Feud Game Logo](/screenshots/family-feud-logo.png)
-
 ## Table of contents
 * [Intro](#Family-Feud-Game-App)
 * [Screenshots](#Screenshots)
